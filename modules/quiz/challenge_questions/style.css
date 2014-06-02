@@ -1,0 +1,13 @@
+/*form table tr td:first-child {
+width:79px;
+text-align:center;
+font-size:14px;
+font-weight:bold;
+}
+
+form table tr td:first-child+td {
+font-size:14px;
+font-weight:bold;
+}
+
+*/

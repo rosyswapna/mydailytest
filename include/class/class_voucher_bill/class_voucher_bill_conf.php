@@ -1,0 +1,6 @@
+<?php
+	define("BILL_STATUS_ACTIVE",1);
+	define("BILL_STATUS_WAITING_EMAIL_ACTIVATION", 2);
+	define("BILL_STATUS_SUSPENDED", 3);
+	define("BILL_STATUS_DISABLED", 4);
+?>

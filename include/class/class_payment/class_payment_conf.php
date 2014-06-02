@@ -1,0 +1,13 @@
+<?php
+
+	define("PAYMENT_STATUS_PENDING",1);
+	define("PAYMENT_STATUS_PAID",2);
+	define("PAYMENT_STATUS_FAILED",3);
+
+	define("PAYMENT_STATUS_CANCELLED",4);
+
+	define("REFUND_STATUS_PENDING",5);
+	define("REFUND_STATUS_FAILED",6);
+	define("REFUND_STATUS_CANCELLED",7);
+
+?>

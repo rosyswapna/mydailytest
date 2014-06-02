@@ -1,0 +1,54 @@
+form table tr td:first-child {
+width:35%;
+}
+
+#msg_validate_1,.top_rule{
+	text-align: right;
+	padding-right: 50px;
+	
+}
+
+
+#add_more_quiz{
+	text-align: right;
+
+}
+
+.form-box textarea{
+	min-height: 30px;
+}
+.top_left{
+	float: left;
+}
+
+.btn_get_questionids,.real_quiz_hide,.button_validate_rule{
+	padding:5px 10px;
+	margin:0;
+	background:url(/images/button-bg.jpg) repeat-x;
+	height:30px;
+	color:#fff;
+	border-radius:5px;
+	font-family:"Comic Sans MS";
+	font-size:11px;
+	text-transform:uppercase;
+}
+
+.grey_body{
+	background-color: #F9F9F9;
+	float: left;
+
+}
+.white_body{
+	background-color: #fff;
+	float: left;
+}
+#real_quiz_dtls{
+	float: left;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+
+
+#26 November 2013 : server not updated
+_____________________________________________________________
+
+CREATE TABLE IF NOT EXISTS `organization_credits` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` datetime DEFAULT NULL,
+  `credit_type_id` int(11) DEFAULT NULL,
+  `payment_id` int(11) DEFAULT NULL,
+  `organization_id` int(11) DEFAULT NULL,
+  `credit` double DEFAULT NULL,
+  `credit_plan_id` int(11) DEFAULT NULL,
+  `offer_note` text COLLATE utf8_unicode_ci COMMENT 'if credit type 3(offer) ,add note',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci  ;
+_____________________________________________________________
+
+
+
+
+
+#28 November 2013 : server not updated
+_____________________________________________________________
+
+ALTER TABLE `quiz_details` ADD `number_of_question_groups` INT NULL ;
+
+
+ALTER TABLE `question_imports` ADD `organization_id` INT NULL ;
+
+ALTER TABLE `question_group_imports` ADD `organization_id` INT NULL;
+
+_____________________________________________________________
+
+
+
+
+
+#29 November 2013 : server not updated
+_____________________________________________________________
+
+ALTER TABLE `user_credits` ADD `organization_credit_id` INT NULL ,
+ADD `voucher_id` INT NULL;
+
+INSERT INTO `credit_types` (`id`, `name`) VALUES
+(5, 'Organization Credit'),
+(6, 'Voucher');
+
+
+
+CREATE TABLE IF NOT EXISTS `agents` (
+`id` int( 11 ) NOT NULL AUTO_INCREMENT ,
+`username` varchar( 255 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+`password` varchar( 255 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+`name` varchar( 255 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+`email` varchar( 255 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+`phone` varchar( 45 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+`contact_phone` varchar( 45 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+`address` text COLLATE utf8_unicode_ci,
+`agent_status_id` int( 11 ) DEFAULT NULL ,
+`activation_token` varchar( 255 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+`password_token` varchar( 255 ) COLLATE utf8_unicode_ci DEFAULT NULL ,
+PRIMARY KEY ( `id` ) ,
+KEY `agent_status_id` ( `agent_status_id` )
+) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT =2;
+
+
+CREATE TABLE IF NOT EXISTS `agent_statuses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `agent_statuses` (`id`, `name`, `description`) VALUES
+(1, 'Active', 'Active'),
+(2, 'Waiting Email Activation', 'Email activation required'),
+(3, 'Suspended', 'Suspended'),
+(4, 'Disabled', 'Disabled');
+
+
+
+#03 December 2013 : server not updated
+_____________________________________________________________
+
+
+CREATE TABLE IF NOT EXISTS `bill_statuses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+CREATE TABLE IF NOT EXISTS `vouchers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `voucher` varchar(255) NOT NULL,
+  `commision` double DEFAULT NULL,
+  `tax` double DEFAULT NULL,
+  `amount` double DEFAULT NULL,
+  `credit` double DEFAULT NULL,
+  `valid_from` datetime DEFAULT NULL,
+  `valid_to` datetime DEFAULT NULL,
+  `status_id` int(11) NOT NULL DEFAULT '2',
+  `agent_id` int(11) DEFAULT NULL,
+  `voucher_type_id` int(11) DEFAULT NULL,
+  `voucher_bill_id` int(11) DEFAULT NULL,
+  `voucher_bill_item_id` int(11) NOT NULL,
+  `used` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `voucher` (`voucher`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+CREATE TABLE IF NOT EXISTS `voucher_bills` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` datetime NOT NULL,
+  `bill_status_id` int(11) NOT NULL,
+  `payment_id` int(11) NOT NULL,
+  `agent_id` int(11) DEFAULT NULL,
+  `name` text,
+  `address` text,
+  `email` text,
+  `phone` text,
+  `amount` double NOT NULL,
+  `commision` double NOT NULL,
+  `discount` double DEFAULT NULL,
+  `tax` double NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+
+CREATE TABLE IF NOT EXISTS `voucher_bill_items` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `voucher_bill_id` int(11) NOT NULL,
+  `amount` double NOT NULL,
+  `credit` double NOT NULL,
+  `valid_from` datetime DEFAULT NULL,
+  `valid_to` datetime DEFAULT NULL,
+  `description` text,
+  `commision` double NOT NULL,
+  `discount` double DEFAULT NULL,
+  `voucher_bill_item_status_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+CREATE TABLE IF NOT EXISTS `voucher_bill_item_statuses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `voucher_types` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+INSERT INTO `bill_statuses` (`id`, `name`) VALUES
+(1, 'paid'),
+(2, 'unpaid'),
+(3, 'cancelled');
+
+
+
+INSERT INTO `voucher_bill_item_statuses` (`id`, `name`) VALUES
+(1, 'Active'),
+(2, 'Cancelled');
+
+
+
+INSERT INTO `voucher_types` (`id`, `name`) VALUES
+(1, 'billed'),
+(2, 'unbilled');
+
+
+
+ALTER TABLE `quizzes` ADD `question_group_ids` TEXT NULL ;
+
+
+#04 December 2013 : server not updated
+_____________________________________________________________
+ALTER TABLE `voucher_bill_items` ADD `number_of_vouchers` INT NOT NULL ;
+
+_____________________________________________________________

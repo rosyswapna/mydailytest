@@ -1,0 +1,238 @@
+*	{
+
+	margin: 0;
+	/* padding: 0; */
+
+	}
+
+html, body	{height: 100%;}
+
+body{
+
+	background: #fff;
+	color: #393939;
+	/*background:#888a85;*/
+	font-family: Arial;
+	/*background-image: url(../images/acube/layouts/default/default/body_01.png);*/
+	}
+#mocktest
+{
+	position:absolute; right:60; top:551;
+}
+#loginsmall{
+font:Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#333;
+position:absolute; 
+top:5px; right:310px;
+background-color:#FFF !important;
+}
+
+
+
+#header{
+
+	background: url("../images/acube/layouts/demo_test_design/default/top_bg.jpg") top center repeat-x;
+	border-bottom: 0px solid #7e7e7e;
+	height: 148px; 
+	}
+
+
+#logo{
+	
+	
+	width:200px;
+	height:92px;
+	float:left;
+	
+	
+	}
+
+
+#header h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 60px 0px 10px 0px;
+
+	float:left;
+}
+
+#menu_button{
+border-radius:10px;
+ background-color:#431802;
+  min-width:50px; padding:5px;
+  
+}
+
+#menu_bar{
+background: url("../images/acube/layouts/demo_test_design/default/repeat.jpg") repeat-x scroll ;
+height: 68px;
+padding-left:100px;
+font-family:"Comic Sans MS", cursive;
+font-size:15px;
+
+}
+@font-face
+{
+font-family: "Comic Sans MS";
+src: url('../files/fonts/comic.ttf');
+
+}
+
+#menu_bar a{
+/*background: url("../images/acube/layouts/demo_test_design/default/link_button.gif") repeat scroll 0% 0% transparent;*/
+color: #ffffff;
+display: block;
+float: left;
+height: 47px;
+line-height: 50px;
+padding: 0px 20px;
+text-decoration: none; 
+background-size: 100% 100%;
+margin:10px 10px 5px 4px;
+}
+
+	
+#menu_bar a:hover{
+/*background: url("../images/acube/layouts/demo_test_design/default/link_button.gif") repeat scroll 0% 0% transparent;*/
+color: #f57900;
+display: block;
+float: left;
+height: 47px;
+line-height: 50px;
+padding: 0px 20px;
+text-decoration: none;
+background-size: 100% 100%;
+margin:10px 10px 5px 4px;
+}
+
+#content{
+min-height:150px;
+display:inline-block;
+background:#ffffff;
+width:100%;
+}
+
+#wrapper{
+width:1140px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+
+
+}
+
+
+#footer {
+/*position:relative;
+bottom:0;
+width:100%;
+height:30px;*/   /* Height of the footer */
+/*background:#C60;
+color:#fff;
+font-size:12px;
+text-align:right;
+padding:10px 0px 0px 0px;*/
+background: url(../images/acube/layouts/demo_test_design/default/index_18.png) no-repeat;
+height:506px;
+margin-top:10px;
+}
+
+	
+#login-bg	{
+	background: url(../images/acube/layouts/demo_test_design/login/login_bg.jpg) #2f2f2f no-repeat top center;
+	}
+
+#login-holder	{
+	margin: 0px auto 0 auto;
+	width: 508px;
+	margin-top:200px;
+	}
+
+#loginbox	{
+	background: url(../images/acube/layouts/demo_test_design/login/loginbox_bg.png) no-repeat;
+	font-size: 12px;
+	height: 212px;
+	line-height: 12px;
+	padding: 80px;
+	position: relative;
+	width: 508px;
+
+	}
+
+.login_error{color:red;}
+
+
+
+
+
+
+/*Initialize*/
+ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    background: #431802;
+	border-radius:10px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 260px;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}
+
+.user_info{
+position:absolute;
+top:128px;
+right:30px;
+}
+
+
+#flash_div{
+position:absolute;
+top:50px;
+right:0px;
+width:400px;
+background:#ccc;
+padding:10px;
+border-radius:10px;
+}
+
+#flash_div h2{
+width:400px;
+text-align:center
+}
+
+#flash_div p{
+width:400px;
+text-align:center;
+padding-top:10px;
+}
+
+#flash_div a{
+float:right;
+}
+
+
+#ui-datepicker-div { font-size:11px; }

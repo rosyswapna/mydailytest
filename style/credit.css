@@ -1,0 +1,96 @@
+#credit{
+margin-top: 20px;	
+margin-left: 20px;
+margin-right: 20px;
+float: left;
+}
+
+#credit_info{
+	float: left;
+	/*border: 1px solid #DAD6D6;*/
+	width: auto;
+	padding: 5px;
+	
+}
+#credit_form{
+
+	width: 400px;
+	float: right;
+	/*border: 1px solid #DAD6D6;*/
+	margin-top: 100px;
+	margin-left: 20px;
+
+}
+label{
+	font-weight: bold;
+	font-size: 15px;
+
+}
+span{
+	color: red;
+	font-weight: bold;
+	font-size: 11px;
+
+}
+table{
+	width: 100%;
+
+}
+form table tr{
+	height: 40px;
+}
+
+form table tr td:first-child {
+	width: 180px;
+	text-align: ;
+
+}
+
+h3{
+	height: 40px;
+}
+
+
+.form_head{
+	text-align: left;
+	font-size: 17px;
+	font-weight: bold;	
+}
+#credit_info table tr{
+	height: 30px;
+}
+
+#credit_info table tr td:first-child {
+width: 30px;
+}
+#credit_info table tr td:first-child+td {
+width: 130px;
+}
+#credit_info table tr td:first-child+td+td {
+width: 80px;
+}
+#credit_info table tr td:first-child+td+td+td {
+
+}
+#credit_info table tr td:first-child+td+td+td+td {
+width: 150px;
+}
+#credit_info table tr td:first-child+td+td+td+td+td {
+width: 150px;
+}
+
+
+#credit_info table tr:nth-child(even) {background: #CCC}
+#credit_info table tr:nth-child(odd) {background: #FFF}
+
+.blackfont_small{
+	font-weight: 100;
+	font-size: 14px;
+}
+#more{
+	text-align: right;
+}
+.edit{
+	cursor: pointer;
+	color: blue;
+}

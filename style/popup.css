@@ -1,0 +1,65 @@
+
+
+.outer{
+  height: 700px;
+
+}
+
+.invoice{
+width:504px;
+float:left;
+ margin-top: 15px;
+  margin-left: 200px;
+
+}
+.popupbox {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  margin-top: 15px;
+  margin-left: 200px;
+
+  text-align:left;
+ 
+ padding: 5px;
+ width:550px;float: left;
+}
+.selected{
+  display:block;
+}
+#left, #right {
+  font-family: Georgia;
+  width:250px;
+  height: 240px;
+}
+#left{
+  float: left;
+}
+#right{
+  float: right;
+}
+#middle{
+  margin-top: 40px;
+  border:1px solid #E6E6E6;float: left;height: 160px;
+}
+.head{
+  margin-top: 5px;
+  text-align: center;
+}
+.content{
+  font-size: 13px;
+  line-height: 25px;
+  padding: 10px 0px 0px 25px;
+}
+.h_line{
+  margin-left: 25px;
+  background: url("../images/popup/line.png");
+  background-repeat: repeat-x;
+  width: 200px;
+  height: 10px;
+}
+#event{
+  position: absolute;
+  bottom: 15px;
+ margin-left: 200px;
+}

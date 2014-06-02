@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<!-- Facebook Likes -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=288458437926391";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook Likes End -->
+
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>My Daily Test.com</title>
+
+  <?php if(WEB_URL != "http://mydailytest.com"){?>
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="noindex">
+  <?php } ?>
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Main Style -->
+  <link rel="stylesheet" href="css/style.css" /> 
+  
+  <!-- Color Style -->
+  <link rel="stylesheet" href="css/skins/colors/red.css"  />
+  
+  <!-- Layout Style -->
+  <link rel="stylesheet" href="css/layout/wide.css"  />
+  
+  <!-- Style Switcher Box 
+  <link rel="stylesheet" href="css/switcher/style.css">-->
+  
+  <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+  <![endif]-->
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  
+  <?php if (!empty($this->script)) echo $this->script ?>
+  <?php if (!empty($this->style)) echo $this->style ?>
+  
+</head>
+<body>
+
+<div id="wrap" class="boxed">
+	<header>
+		<div class="top-bar">
+			<div class="container clearfix">
+				<div class="slidedown" style="display:block">
+
+					<div class="sixteen columns">
+						<div class="social">
+							<?php if (isset($top_menu)) echo $top_menu ?>
+						</div><!--End social icons -->
+					</div>
+					
+
+
+				</div><!-- End slidedown -->
+			</div><!-- End Container -->
+
+		</div><!-- End top-bar -->
+		
+		<div class="main-header">
+			<div class="container clearfix">
+				<a href="#" class="down-button current"><i class="icon-angle-up"></i></a><!-- this appear on small devices -->
+				<div class="sixteen column">
+					<div class="logo">
+						<a href="/index.php">
+							<img src="images/logo.png" alt="My Daily Test.com" />
+						</a>
+						
+				<a class="top-facebook no-margin" href="#">		
+				<div class="fb-like " style="width:200px;" data-href="https://www.facebook.com/pages/mydailytestcom/194165150765329" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="false" data-send="false"></div>		
+				</a>	
+					</div>					
+				</div><!-- End Logo -->	
+				<div class="widget search cus-search">
+					<form action="#">
+					 <input type="text" onFocus="if(this.value == 'Search') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'Search'; }" value="Search" class="text-search">
+					 <input type="submit" class="submit-search" value="">
+				   </form>
+				</div>	
+			</div><!-- End Container -->
+		</div><!-- End main-header -->
+		
+		
+		<div class="main-header nav-header">
+			<div class="container clearfix">				
+				<div class="two-thirds column">
+					<nav id="menu" class="navigation" role="navigation">
+          				<a href="#">Menu</a><!-- this appear on small devices -->
+						<ul id="nav">
+							<?php if (isset($menu)) echo $menu ?>
+						</ul>
+					</nav>	
+				</div><!-- End Menu -->				
+			</div><!-- End Container -->
+		</div><!-- End main-header -->
+		
+	 </header><!-- <<< End Header >>> -->
+     
+	 <div class="slider-1 clearfix">
+	 	<div class="flex-container">
+			<div class="flexslider loading">
+        		<ul class="slides">
+          	 		<li style="background:url(images/img/sliders/slider-1/slider-bg-1.jpg) no-repeat;background-position:50% 0">
+						<div class="container">
+           					<div class="sixteen columns contain">
+								<h2 data-toptitle="20%" class="cus-heading">Are you preparing for Kerala PSC LDC exam? <br/><br/>Now, Take Daily Online Mock Exams here for as low as Rs.2 per exam!</h2>	
+								 <div class="links" data-bottomlinks="5%" style="margin-left:-20px">
+								 	<a href="/demo.php"><img src="images/do-a-mock-test-now-h.png" alt="take test"/></a>
+								 </div>
+								<img src="images/slider-item-1.png" class="item"  data-topimage="10%" alt="slider-item-1"/>							
+           					</div>
+         				</div><!-- End Container -->
+          			</li><!-- End item -->          
+          
+         			<li style="background:url(images/img/sliders/slider-1/slider-bg-2.jpg) no-repeat; background-position:50% 0">
+          				<div class="container">
+           					<div class="sixteen columns contain">
+								<h2 data-toptitle="20%" class="cus-heading">Are you preparing for Kerala PSC LDC or IBPS Clerk Exam? <br/><br/>Now, Take Daily Online Mock Exams here for as low as Rs.2 per exam!</h2>
+								<div class="links" data-bottomlinks="5%" style="margin-left:-20px">
+								 	<a href="/sign_up.php"><img src="images/sign_up_home.png" alt="take test"/></a>
+								 </div>
+								<img src="images/slider-item-1.png" class="item"  data-topimage="10%" alt="slider-item-2"/>								
+           					</div>
+         				</div><!-- End Container -->
+          			</li><!-- End item --> 
+                    
+                    <li style="background:url(images/img/sliders/slider-1/slider-bg-1.jpg) no-repeat; background-position:50% 0">
+          				<div class="container">
+           					<div class="sixteen columns contain">
+								<h2 data-toptitle="20%" class="cus-heading">Are you preparing for IBPS Clerk Exam? <br/><br/>Now, Take Daily Online Mock Exams here for as low as Rs.2 per exam!</h2>
+								<div class="links" data-bottomlinks="5%" style="margin-left:-20px">
+								 	<a href="/demo.php"><img src="images/do-a-mock-test-now-h.png" alt="take test"/></a>
+								 </div>
+								<img src="images/slider-item-1.png" class="item"  data-topimage="10%" alt="slider-item-2"/>								
+           					</div>
+         				</div><!-- End Container -->
+          			</li><!-- End item -->         
+       			 </ul>
+			</div>
+		</div>     
+	</div><!-- End slider -->
+	
+	   
+   	<div class="middle-container">
+   		<!-- Start main content -->
+   		<div class="container main-content clearfix">
+			<?php if ( !isset($_SESSION[SESSION_TITLE.'userid']) ) { ?>
+			<div class="do-mock-test"><a href="/demo.php"><img src="images/do-mock-test-vertical.png"  alt="Do Mock Test" /></a></div>
+			<div class="do-mock-test-desk"><a href="/demo.php"><img src="images/do-a-mock-test-now-c.png"  alt="Do Mock Test" /></a></div>
+			<?php }?>
+			
+			
+			<div class="sixteen columns bottom-1"></div><!-- End line -->
+			
+   			<div class="two-thirds column bottom-3">
+			   <h3 class="title comic-txt">Take Mock Tests Anytime!</h3> 
+			   <p style="font-family:Tahoma; font-size:15px; color:#2B2B2B;">
+ myDailytest.com lets you to take Mock Competitive Exams <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;• whenever you want<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;• the way you want<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;• and rate yourself compared to other test takers.<br>
+
+As simple as that!!! </p>
+			   <br>
+			   <h3 class="title comic-txt">What is it?</h3>
+			     <p style="font-family:Tahoma; font-size:15px; color:#2B2B2B;">
+			     mydailytest.com has been created with the intention of providing assistance to candidates preparing for competitive examinations. During the first phase of its launch, MDT brings to you the option to take practice tests for Kerala LDC and IBPS Clerk Exams.
+			     <br>
+			     <br>
+			     MDT works on the concept of exam credits. You can purchase exam credits through your mobile phone ( Currently Airtel / Idea) and use them for taking the tests of your choice. 
+  <br></p>
+  <br>
+  <h3 class="title comic-txt">Features</h3>
+  <p  style="font-family:Tahoma; font-size:15px; color:#2B2B2B;">
+			     In addition to providing a very user friendly test platform with a very simple to use navigation; the site offers features like 
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;• Each time you take a particular test, a new set of questions will be given<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;• Timed tests to simulate actual test environment<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;• Review screen to compare your answers vis a vis the correct options<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;• Graphical representation of your test performance<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;• Peer to Peer comparison of your test scores compared to what other test takers scored<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;• Important notifications on various tests.<br>
+  <br>
+	<h3 class="title comic-txt">What’s new?</h3>	
+    <p style="font-family:Tahoma; font-size:15px; color:#2B2B2B;">	     
+			     Keeping in mind the needs of the Tech savvy student community, MDT brings you the option of discussing questions through Facebook with your friends and in forums.<br>
+  <br>
+			     We at MDT hope to make your practice tests a very meaningful exercise and wish you all the very best!!		      </p>
+		  </div><!-- End who we are --> 
+			     
+      		<div class="one-third column bottom-3">
+				<div class="sidebar-blk cus-slider">
+				<div class="slidewrap3" data-autorotate="4000">
+					<h3 class="title bottom-2">Coming soon</h3> 
+						<ul class="slider" id="sliderName3">
+							<li class="slide">      
+							  <div class="testimonials">
+								<div class="testimonial-item cus-testimonial">
+									<p><span class="testimonials-text">Over <br/>5 lakhs </span><span class="testimonials-text1">questions</span></p>
+								  </div>
+							  </div><!-- End testimonials -->      
+      						</li><!-- End slide -->
+      
+       						<li class="slide">      
+							  <div class="">
+								<div class="testimonial-item  cus-testimonial">
+									<div style="float:left; padding-left:35px; width:250px; font-size:13px; font-weight:bold;">
+                                        <img src="images/tick.png"> IBPS PO <br><br>
+                                        <img src="images/tick.png"> Medical Entrance <br><br>
+                                        <img src="images/tick.png"> Engineering Entrance <br><br>
+                                        <img src="images/tick.png"> Kerala PSC Assistant Grade II <br><br>
+                                        <img src="images/tick.png"> SSC Exams <br><br>
+                                     </div>
+								  </div>
+							  </div><!-- End testimonials -->      
+      						</li><!-- End slide -->
+							
+						 </ul>
+						 <div class="clear"></div>
+						 <div class="like-facebook">
+							<p class="like">Like us on Facebook to get our updates </p>
+							<p class="no-margin"><a class="top-facebook" href="#">
+                            	<div class="fb-like" data-href="https://www.facebook.com/pages/mydailytestcom/194165150765329" data-width="100px" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="false" data-send="false"></div>
+							</a></p>
+						</div>
+      			</div><!-- End slidewrap -->
+	  			</div>
+   			 </div><!-- End column -->
+             
+             <div class="one-third column bottom-3">
+				<div class="sidebar-blk">
+				<h3 class="title bottom-2">My progress card</h3> 
+				<p class="acenter"><img class="pic" src="images/progress-card.jpg" alt="My progress card"></p>	
+				</div>
+    		</div><!-- End column -->
+   
+   			<div class="two-thirds column bottom-3">
+				<div class="notification">
+			   <h3 class="title bottom-2">Notifications: <span>KERALA PSC LDC EXAM DATES:</span></h3> 
+			   <ul>
+					<li>09 NOV 2013: Thiruvanathapuram and Kasargod</li>
+                    <li>23 NOV 2013: Kollam and Kannur</li>
+                    <li>07 DEC 2013: Pathanamthitta and Thrissur</li>
+                    <li>04 JAN 2014: Ernakulam and Wayanad</li>
+                    <li>18 JAN 2014: Alapuzha and Kozhikode</li>
+                    <li>08 FEB 2014: Kottayam and Palakkad</li>
+                    <li>22 FEB 2014: Idukki and Malappuram</li>
+                    <li>01 MAR 2014: Departmental Exam</li>
+				</ul>
+				</div>
+     		</div><!-- End who we are --> 
+			     
+      		
+   		</div><!-- <<< End Container >>> -->
+   
+   </div>
+   
+	<footer>
+		<?php if (isset($footer)) echo $footer; ?>
+	</footer><!-- <<< End Footer >>> -->
+  
+  </div><!-- End wrap -->
+  
+  <!-- Start JavaScript -->
+  <script src="js/jquery-1.9.1.min.js"></script> <!-- jQuery library -->
+  <script src="js/jquery.easing.1.3.min.js"></script> <!-- jQuery Easing --> 
+  <script src="js/jquery-ui/jquery.ui.core.js"></script> <!-- jQuery Ui Core-->
+  <script src="js/jquery-ui/jquery.ui.widget.js"></script> <!-- jQuery Ui Widget -->
+  <script src="js/jquery-ui/jquery.ui.accordion.js"></script> <!-- jQuery Ui accordion--> 
+  <script src="js/jquery-cookie.js"></script> <!-- jQuery cookie --> 
+  <script src="js/ddsmoothmenu.js"></script> <!-- Nav Menu ddsmoothmenu -->
+  <script src="js/jquery.flexslider.js"></script> <!-- Flex Slider  -->
+  <script src="js/colortip.js"></script> <!-- Colortip Tooltip Plugin  -->
+  <script src="js/tytabs.js"></script> <!-- jQuery Plugin tytabs  -->
+  <script src="js/jquery.ui.totop.js"></script> <!-- UItoTop plugin  -->
+  <script src="js/carousel.js"></script> <!-- jQuery Carousel  -->
+  <script src="js/jquery.isotope.min.js"></script> <!-- Isotope Filtering  -->
+  <script src="js/twitter/jquery.tweet.js"></script> <!-- jQuery Tweets -->
+  <script src="js/jflickrfeed.min.js"></script> <!-- jQuery Flickr -->
+  <script src="js/social-options.js"></script> <!-- social options , twitter, flickr.. -->
+  <script src="js/doubletaptogo.js"></script> <!-- Touch-friendly Script  -->
+  <script src="js/fancybox/jquery.fancybox.js"></script> <!-- jQuery FancyBox -->
+  <script src="js/jquery.sticky.js"></script> <!-- jQuery Sticky -->
+  <script src="js/custom.js"></script> <!-- Custom Js file for javascript in html -->
+  <script>
+		function popup_alert(message,redirect_url="#",button_ok="Ok", button_cancel="Cancel" ){
+			$("#popup_alert_message").html(message);
+			$("#popup_alert_redirect").attr('href',redirect_url);
+			$("#popup_alert_button_ok").attr('value',button_ok);
+
+			if (redirect_url == "#" ){
+				$("#popup_alert_redirect").hide();
+			}else{
+				$("#popup_alert_redirect").show();
+			}
+			$("#popup_alert_button_cancel").attr('value',button_cancel);
+			docHeight = $(document).height();
+			docWidth = $(window).width();
+			$(".overlay, .overlay-panel").fadeIn(300);
+			$(".overlay").css({"height":docHeight,"width":docWidth});
+			return false;
+		}
+
+  </script>
+  <!-- End JavaScript -->
+  
+
+<script>
+
+	function flash_alert(message,redirect_url){
+		$("#popup_alert_message").html(message);
+		$("#popup_alert_redirect").attr('href',redirect_url);
+		if (redirect_url == "#" ){
+			$("#popup_alert_redirect").hide();
+		}else{
+			$("#popup_alert_redirect").show();
+		}	
+		docHeight = $(document).height();
+		docWidth = $(window).width();
+		$(".overlay, .overlay-panel").fadeIn(300);
+		$(".overlay").css({"height":docHeight,"width":docWidth});
+	}
+$(document).ready(function(){
+<?php if(isset($_SESSION[SESSION_TITLE.'flash_redirect_page']) && trim($_SESSION[SESSION_TITLE.'flash_redirect_page'])!=""){ ?>
+	alert_redirect = "<?php echo WEB_URL.'/'.$_SESSION[SESSION_TITLE.'flash_redirect_page']; ?>";
+<?php $_SESSION[SESSION_TITLE.'flash_redirect_page'] = "" ;}else{ ?>
+	alert_redirect  ="#";
+<?php } ?>
+
+
+<?php if(isset($_SESSION[SESSION_TITLE.'flash']) && trim($_SESSION[SESSION_TITLE.'flash'])!=""){ ?>
+alert_message = "<?php echo $_SESSION[SESSION_TITLE.'flash']; ?>";
+flash_alert(alert_message,alert_redirect);
+<?php  $_SESSION[SESSION_TITLE.'flash']="";	} ?>
+
+});
+</script>
+
+
+<div class="overlay-panel">
+  	<p class="heading">
+		<span class="fleft">Notification</span>
+		<span class="fright"><a href="#" class="close-panel" onClick="$('.overlay, .overlay-panel').fadeOut(300); " >x</a></span>
+	</p>
+	<p class="content">
+		<span class="info"></span>
+		<span id ="popup_alert_message"> </span>
+	</p>
+	<p class="overlay-button">
+
+	<br><a id = "popup_alert_redirect" href="#" > <input id = "popup_alert_button_ok"  type="button" class="button" value="Go Back" />&nbsp;</a>
+	<input type="submit" id = "popup_alert_button_cancel" class="button gray close-panel" value="Close" onClick="$('.overlay, .overlay-panel').fadeOut(300); " />
+	</p>
+</div>
+<div class="overlay"></div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?php
+define("VOUCHER_BILL_ITEM_ACTIVE", 1);
+define("VOUCHER_BILL_ITEM_CANCELLED", 2);
+
+?>

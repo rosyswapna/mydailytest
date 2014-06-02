@@ -1,0 +1,34 @@
+table {
+width: 500px;
+align: center;
+margin-left: 400px;
+margin-right: auto;
+background-color: #FAFAFA;
+margin-top: 5px;
+background: url(../images/layouts/demo_test_design/default/inner_page_14.png) repeat-y;
+}
+
+#credit_holder
+{ 
+	margin-top:20px;
+	position:absolute; right:850; top:229px; width: 200px; height:110px;
+	text-align: left;padding-left: 10px;
+}
+
+.exam_checkboxs{
+	float: left;
+	margin-right: 5px;
+}
+
+#search_button{
+	border-radius:5px;
+ background-color:#36C;
+  min-width:50px; padding:5px;
+  
+}
+#content {
+min-height:600px;
+}
+#txtid{
+width:50px;
+}
